@@ -13,6 +13,6 @@
 import "@/assets/css/styles.css";
 
 export default {
-  name: "app"
+  name: "App"
 };
 </script>
