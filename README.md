@@ -3,8 +3,8 @@
 ## Project setup
 ```
 ./install.sh
-yarn
 ```
+Make sure your package.json got updated successfully and delete this step. 
 
 ### Compiles and hot-reloads for development
 ```
