@@ -39,14 +39,16 @@ git init
 
 echo
 
-find . -type f -exec sed -i '' -e "s/:author_name/$author_name/" {} \;
-find . -type f -exec sed -i '' -e "s/:author_username/$author_username/" {} \;
-find . -type f -exec sed -i '' -e "s/:author_email/$author_email/" {} \;
-find . -type f -exec sed -i '' -e "s/:package_name/$package_name/" {} \;
-find . -type f -exec sed -i '' -e "s/:package_description/$package_description/" {} \;
+sed -i '' -e "s/:author_name/$author_name/" README.md package.json;
+sed -i '' -e "s/:author_username/$author_username/" README.md package.json;
+sed -i '' -e "s/:author_email/$author_email/" README.md package.json;
+sed -i '' -e "s/:package_name/$package_name/" README.md package.json;
+sed -i '' -e "s/:package_description/$package_description/" README.md package.json;
 
-sed -i '' -e "/^\*\*Note:\*\* Replace/d" README.md
+# install dependencies
+yarn
 
+# self-destruct this file
 echo "Replaced all values and reset git directory, self destructing in 3... 2... 1..."
 
 rm -- "$0"
