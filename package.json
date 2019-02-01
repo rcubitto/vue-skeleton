@@ -1,15 +1,10 @@
 {
-  "name": ":author_username/:package_name",
+  "name": ":package_name",
+  "version": "0.0.1",
   "description": ":package_description",
   "homepage": "https://github.com/:author_username/:package_name",
   "license": "MIT",
-  "authors": [
-    {
-      "name": ":author_name",
-      "email": ":author_email",
-      "role": "Developer"
-    }
-  ],
+  "author": ":author_name",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
