@@ -45,6 +45,9 @@ sed -i '' -e "s/:author_email/$author_email/" README.md package.json;
 sed -i '' -e "s/:package_name/$package_name/" README.md package.json;
 sed -i '' -e "s/:package_description/$package_description/" README.md package.json;
 
+sed -i  '' '/Make sure your package.json got updated successfully./d' README.md;
+sed -i '' -e "s/.\/install.sh/yarn/" README.md;
+
 # install dependencies
 yarn
 

@@ -4,7 +4,7 @@
 ```
 ./install.sh
 ```
-Make sure your package.json got updated successfully and delete this step. 
+Make sure your package.json got updated successfully.
 
 ### Compiles and hot-reloads for development
 ```
