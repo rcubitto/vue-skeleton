@@ -1,7 +1,15 @@
 {
-  "name": "vue-skeleton",
-  "version": "0.1.0",
-  "private": true,
+  "name": ":author_username/:package_name",
+  "description": ":package_description",
+  "homepage": "https://github.com/:author_username/:package_name",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": ":author_name",
+      "email": ":author_email",
+      "role": "Developer"
+    }
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
